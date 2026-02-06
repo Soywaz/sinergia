@@ -1,399 +1,490 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SINERGIA - Eleva tu Talento con IA Generativa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <!-- Tipografía Corporativa se gestiona vía CSS system stack -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 19V5M5 12l7-7 7 7" />
-        </svg>
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
     </button>
 
     <!-- Hero Section -->
     <section class="hero parallax-section" id="inicio">
-        <div class="parallax-bg hero-bg"></div>
-        <div class="hero-grid"></div>
+      <div class="parallax-bg hero-bg"></div>
+      <div class="hero-grid"></div>
 
-        <div class="hero-content">
-            <span class="hero-label">CURSO // BÁSICO</span>
-            <h1>SINERGIA</h1>
-            <p class="hero-subtitle">Eleva tu Talento con IA Generativa. Libera el poder de la IA para transformar tu
-                trabajo y tu vida.</p>
-            <div class="hero-cta">
-                <a href="#inversion" class="btn btn-primary">Conoce la Inversión</a>
-                <a href="#ruta" class="btn btn-secondary">Ver la Ruta</a>
-            </div>
+      <div class="hero-content">
+        <span class="hero-label">CURSO // BÁSICO</span>
+        <h1>SINERGIA</h1>
+        <p class="hero-subtitle">
+          Eleva tu Talento con IA Generativa. Libera el poder de la IA para
+          transformar tu trabajo y tu vida.
+        </p>
+        <div class="hero-cta">
+          <a href="#inversion" class="btn btn-primary">Conoce la Inversión</a>
+          <a href="#ruta" class="btn btn-secondary">Ver la Ruta</a>
         </div>
+      </div>
 
-        <div class="scroll-indicator">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 5v14M19 12l-7 7-7-7" />
-            </svg>
-        </div>
+      <div class="scroll-indicator">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+      </div>
     </section>
 
     <!-- Questions Section -->
     <section class="questions">
-        <div class="container">
-            <h2 class="section-title">¿Te has preguntado...?</h2>
-            <p class="section-description">Exploraremos las preguntas fundamentales sobre la integración de IA en tu
-                organización</p>
+      <div class="container">
+        <h2 class="section-title">¿Te has preguntado...?</h2>
+        <p class="section-description">
+          Exploraremos las preguntas fundamentales sobre la integración de IA en
+          tu organización
+        </p>
 
-            <div class="questions-grid">
-                <div class="question-card">
-                    <h3>Ética y Transparencia</h3>
-                    <p>¿Cómo asegurar el uso ético de la IA y la transparencia en el origen de los datos?</p>
-                </div>
-                <div class="question-card">
-                    <h3>Integración Humana</h3>
-                    <p>¿Cómo integrarías la IA en los procesos operativos de tu organización sin reemplazar al humano?
-                    </p>
-                </div>
-                <div class="question-card">
-                    <h3>Decisiones Estratégicas</h3>
-                    <p>¿Cómo podría la IA potenciar las decisiones estratégicas de una organización?</p>
-                </div>
-                <div class="question-card">
-                    <h3>Comunicación con IA</h3>
-                    <p>¿Cómo debo hablar con la IA? ¿Desaparecerán los prompts? ¿Cambiará la forma de hacerlo?</p>
-                </div>
-            </div>
+        <div class="questions-grid">
+          <div class="question-card">
+            <h3>Ética y Transparencia</h3>
+            <p>
+              ¿Cómo asegurar el uso ético de la IA y la transparencia en el
+              origen de los datos?
+            </p>
+          </div>
+          <div class="question-card">
+            <h3>Integración Humana</h3>
+            <p>
+              ¿Cómo integrarías la IA en los procesos operativos de tu
+              organización sin reemplazar al humano?
+            </p>
+          </div>
+          <div class="question-card">
+            <h3>Decisiones Estratégicas</h3>
+            <p>
+              ¿Cómo podría la IA potenciar las decisiones estratégicas de una
+              organización?
+            </p>
+          </div>
+          <div class="question-card">
+            <h3>Comunicación con IA</h3>
+            <p>
+              ¿Cómo debo hablar con la IA? ¿Desaparecerán los prompts? ¿Cambiará
+              la forma de hacerlo?
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Value Proposition -->
     <section class="value-prop parallax-section">
-        <div class="parallax-bg"
-            style="background: radial-gradient(circle at 30% 50%, rgba(0, 240, 255, 0.08) 0%, transparent 60%);"></div>
+      <div
+        class="parallax-bg"
+        style="
+          background: radial-gradient(
+            circle at 30% 50%,
+            rgba(0, 240, 255, 0.08) 0%,
+            transparent 60%
+          );
+        "
+      ></div>
 
-        <div class="container">
-            <div class="value-content">
-                <div class="value-text">
-                    <h2>Aprende a maximizar la productividad</h2>
-                    <p>Descubre estrategias para integrar la IA generativa en las tareas cotidianas y los procesos de
-                        toma de decisiones.</p>
-                    <p>Con la inteligencia artificial como tu compañero de trabajo, transformarás tu forma de crear y
-                        producir.</p>
-                    <p class="highlight-text">No requiere conocimientos previos. Solo curiosidad y apertura para
-                        aprender desde la práctica.</p>
-                </div>
-                <div class="value-visual">
-                    <div class="floating-icon" style="width: 120px; height: 120px;">AI</div>
-                    <div class="floating-icon" style="width: 100px; height: 100px; font-size: 1.5rem;">🚀</div>
-                    <div class="floating-icon" style="width: 110px; height: 110px; font-size: 1.8rem;">⚡</div>
-                    <div class="floating-icon" style="width: 95px; height: 95px; font-size: 1.4rem;">💡</div>
-                </div>
+      <div class="container">
+        <div class="value-content">
+          <div class="value-text">
+            <h2>Aprende a maximizar la productividad</h2>
+            <p>
+              Descubre estrategias para integrar la IA generativa en las tareas
+              cotidianas y los procesos de toma de decisiones.
+            </p>
+            <p>
+              Con la inteligencia artificial como tu compañero de trabajo,
+              transformarás tu forma de crear y producir.
+            </p>
+            <p class="highlight-text">
+              No requiere conocimientos previos. Solo curiosidad y apertura para
+              aprender desde la práctica.
+            </p>
+          </div>
+          <div class="value-visual">
+            <div class="floating-icon" style="width: 120px; height: 120px">
+              AI
             </div>
+            <div
+              class="floating-icon"
+              style="width: 100px; height: 100px; font-size: 1.5rem"
+            >
+              🚀
+            </div>
+            <div
+              class="floating-icon"
+              style="width: 110px; height: 110px; font-size: 1.8rem"
+            >
+              ⚡
+            </div>
+            <div
+              class="floating-icon"
+              style="width: 95px; height: 95px; font-size: 1.4rem"
+            >
+              💡
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Route Section -->
     <section class="route parallax-section" id="ruta">
-        <div class="parallax-bg"
-            style="background: radial-gradient(circle at 70% 50%, rgba(255, 51, 102, 0.08) 0%, transparent 60%);"></div>
+      <div
+        class="parallax-bg"
+        style="
+          background: radial-gradient(
+            circle at 70% 50%,
+            rgba(21, 58, 133, 0.08) 0%,
+            transparent 60%
+          );
+        "
+      ></div>
 
-        <div class="container">
-            <h2>La Ruta del Curso</h2>
+      <div class="container">
+        <h2>La Ruta del Curso</h2>
 
-            <div class="route-timeline">
-                <div class="route-line"></div>
+        <div class="route-timeline">
+          <div class="route-line"></div>
 
-                <div class="route-item">
-                    <div class="route-number">
-                        <div class="route-circle">1</div>
-                    </div>
-                    <div class="route-content">
-                        <h3>CO-INTELIGENCIA</h3>
-                        <h4>ENTENDER</h4>
-                        <p>Comprender los orígenes de la IA, sus fundamentos y paradigmas, reconociendo las competencias
-                            humanas clave para un uso responsable.</p>
-                        <span class="route-duration">⏱ Duración: 1 hora</span>
-                    </div>
-                </div>
-
-                <div class="route-item">
-                    <div class="route-number">
-                        <div class="route-circle">2</div>
-                    </div>
-                    <div class="route-content">
-                        <h3>CO-WORKER</h3>
-                        <h4>EXPLORAR</h4>
-                        <p>Analizar casos de éxito de adopción de IA, identificando factores clave, retos y aprendizajes
-                            para nuevos escenarios.</p>
-                        <span class="route-duration">⏱ Duración: 1 hora</span>
-                    </div>
-                </div>
-
-                <div class="route-item">
-                    <div class="route-number">
-                        <div class="route-circle">3</div>
-                    </div>
-                    <div class="route-content">
-                        <h3>DIÁLOGOS DIGITALES</h3>
-                        <h4>HACER</h4>
-                        <p>Aplicar modelos generativos en interacciones prácticas, produciendo contenidos multimodales
-                            bajo criterios técnicos y éticos.</p>
-                        <span class="route-duration">⏱ Duración: 4 horas</span>
-                    </div>
-                </div>
-
-                <div class="route-item">
-                    <div class="route-number">
-                        <div class="route-circle">4</div>
-                    </div>
-                    <div class="route-content">
-                        <h3>GPT'S Y ASISTENTES INTELIGENTES</h3>
-                        <h4>TRANSFORMAR</h4>
-                        <p>Diseñar propuestas de integración de IA en procesos organizacionales, evaluando
-                            oportunidades, límites y desafíos.</p>
-                        <span class="route-duration">⏱ Duración: 6 horas</span>
-                    </div>
-                </div>
-
-                <div class="route-item">
-                    <div class="route-number">
-                        <div class="route-circle">5</div>
-                    </div>
-                    <div class="route-content">
-                        <h3>PROTOTIPADO</h3>
-                        <h4>CONSTRUIR</h4>
-                        <p>Desarrollar un prototipo funcional con herramientas de IA, implementando flujos básicos y
-                            personalización en un contexto organizacional.</p>
-                        <span class="route-duration">⏱ Duración: 6 horas</span>
-                    </div>
-                </div>
-
-                <div class="route-item">
-                    <div class="route-number">
-                        <div class="route-circle">6</div>
-                    </div>
-                    <div class="route-content">
-                        <h3>APRENDER HACIENDO</h3>
-                        <h4>APROPIAR</h4>
-                        <p>Consolidar aprendizajes mediante un proyecto guiado, demostrando autonomía para replicar y
-                            escalar soluciones de IA en nuevos contextos.</p>
-                        <span class="route-duration">⏱ Duración: 4 horas</span>
-                    </div>
-                </div>
+          <div class="route-item">
+            <div class="route-number">
+              <div class="route-circle">1</div>
             </div>
+            <div class="route-content">
+              <h3>CO-INTELIGENCIA</h3>
+              <h4>ENTENDER</h4>
+              <p>
+                Comprender los orígenes de la IA, sus fundamentos y paradigmas,
+                reconociendo las competencias humanas clave para un uso
+                responsable.
+              </p>
+              <span class="route-duration">⏱ Duración: 1 hora</span>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-number">
+              <div class="route-circle">2</div>
+            </div>
+            <div class="route-content">
+              <h3>CO-WORKER</h3>
+              <h4>EXPLORAR</h4>
+              <p>
+                Analizar casos de éxito de adopción de IA, identificando
+                factores clave, retos y aprendizajes para nuevos escenarios.
+              </p>
+              <span class="route-duration">⏱ Duración: 1 hora</span>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-number">
+              <div class="route-circle">3</div>
+            </div>
+            <div class="route-content">
+              <h3>DIÁLOGOS DIGITALES</h3>
+              <h4>HACER</h4>
+              <p>
+                Aplicar modelos generativos en interacciones prácticas,
+                produciendo contenidos multimodales bajo criterios técnicos y
+                éticos.
+              </p>
+              <span class="route-duration">⏱ Duración: 4 horas</span>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-number">
+              <div class="route-circle">4</div>
+            </div>
+            <div class="route-content">
+              <h3>GPT'S Y ASISTENTES INTELIGENTES</h3>
+              <h4>TRANSFORMAR</h4>
+              <p>
+                Diseñar propuestas de integración de IA en procesos
+                organizacionales, evaluando oportunidades, límites y desafíos.
+              </p>
+              <span class="route-duration">⏱ Duración: 6 horas</span>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-number">
+              <div class="route-circle">5</div>
+            </div>
+            <div class="route-content">
+              <h3>PROTOTIPADO</h3>
+              <h4>CONSTRUIR</h4>
+              <p>
+                Desarrollar un prototipo funcional con herramientas de IA,
+                implementando flujos básicos y personalización en un contexto
+                organizacional.
+              </p>
+              <span class="route-duration">⏱ Duración: 6 horas</span>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-number">
+              <div class="route-circle">6</div>
+            </div>
+            <div class="route-content">
+              <h3>APRENDER HACIENDO</h3>
+              <h4>APROPIAR</h4>
+              <p>
+                Consolidar aprendizajes mediante un proyecto guiado, demostrando
+                autonomía para replicar y escalar soluciones de IA en nuevos
+                contextos.
+              </p>
+              <span class="route-duration">⏱ Duración: 4 horas</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Modules Section -->
     <section class="modules">
-        <div class="container">
-            <h2>Módulos del Programa</h2>
+      <div class="container">
+        <h2>Módulos del Programa</h2>
 
-            <div class="modules-grid">
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-number">(1)</div>
-                        <div class="module-duration">1 hora</div>
-                    </div>
-                    <div class="module-body">
-                        <h3>CO-INTELIGENCIA</h3>
-                        <h4>Fundamentos de IA</h4>
-                        <p>Comprender las bases de la inteligencia artificial</p>
-                        <ul class="module-topics">
-                            <li>Historia y evolución de la IA</li>
-                            <li>Conceptos fundamentales</li>
-                            <li>Tipos de IA: Simbólica y Subsimbólica</li>
-                            <li>Ética y responsabilidad</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-number">(2)</div>
-                        <div class="module-duration">1 hora</div>
-                    </div>
-                    <div class="module-body">
-                        <h3>CO-WORKER</h3>
-                        <h4>Casos de Éxito</h4>
-                        <p>Analizar implementaciones reales de IA</p>
-                        <ul class="module-topics">
-                            <li>Mejores prácticas</li>
-                            <li>Aprendizajes clave</li>
-                            <li>Factores de éxito</li>
-                            <li>Gestión del cambio</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-number">(3)</div>
-                        <div class="module-duration">4 horas</div>
-                    </div>
-                    <div class="module-body">
-                        <h3>DIÁLOGOS DIGITALES</h3>
-                        <h4>Prompt Engineering</h4>
-                        <p>Dominar la comunicación efectiva con modelos de IA</p>
-                        <ul class="module-topics">
-                            <li>Context Engineering</li>
-                            <li>Estructura de un prompt</li>
-                            <li>Técnicas de prompts</li>
-                            <li>Seguridad y protección</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-number">(4)</div>
-                        <div class="module-duration">6 horas</div>
-                    </div>
-                    <div class="module-body">
-                        <h3>GPT'S Y ASISTENTES</h3>
-                        <h4>Arquitectura de IA</h4>
-                        <p>Diseñar y crear asistentes inteligentes personalizados</p>
-                        <ul class="module-topics">
-                            <li>Arquitectura de IA</li>
-                            <li>Diferencia entre agentes y asistentes</li>
-                            <li>Asistentes: GPT, Gemini, Copilot</li>
-                            <li>Creación de asistentes con IA</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-number">(5)</div>
-                        <div class="module-duration">6 horas</div>
-                    </div>
-                    <div class="module-body">
-                        <h3>PROTOTIPADO</h3>
-                        <h4>Automatización con IA</h4>
-                        <p>Construir flujos de trabajo automatizados con IA</p>
-                        <ul class="module-topics">
-                            <li>Qué es un workflow</li>
-                            <li>Qué es un trigger</li>
-                            <li>Configuración paso a paso</li>
-                            <li>Personalización y revisión de flujos</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-number">(6)</div>
-                        <div class="module-duration">4 horas</div>
-                    </div>
-                    <div class="module-body">
-                        <h3>APRENDER HACIENDO</h3>
-                        <h4>Proyecto Final</h4>
-                        <p>Aplicar todo lo aprendido en un proyecto real</p>
-                        <ul class="module-topics">
-                            <li>Desarrollo de proyectos en grupo</li>
-                            <li>Acompañamiento de un mentor</li>
-                            <li>Asesoría personalizada (40 min - 1 hora)</li>
-                            <li>Modalidad: Reto presencial o Guiado virtual</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="modules-grid">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">(1)</div>
+              <div class="module-duration">1 hora</div>
             </div>
+            <div class="module-body">
+              <h3>CO-INTELIGENCIA</h3>
+              <h4>Fundamentos de IA</h4>
+              <p>Comprender las bases de la inteligencia artificial</p>
+              <ul class="module-topics">
+                <li>Historia y evolución de la IA</li>
+                <li>Conceptos fundamentales</li>
+                <li>Tipos de IA: Simbólica y Subsimbólica</li>
+                <li>Ética y responsabilidad</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">(2)</div>
+              <div class="module-duration">1 hora</div>
+            </div>
+            <div class="module-body">
+              <h3>CO-WORKER</h3>
+              <h4>Casos de Éxito</h4>
+              <p>Analizar implementaciones reales de IA</p>
+              <ul class="module-topics">
+                <li>Mejores prácticas</li>
+                <li>Aprendizajes clave</li>
+                <li>Factores de éxito</li>
+                <li>Gestión del cambio</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">(3)</div>
+              <div class="module-duration">4 horas</div>
+            </div>
+            <div class="module-body">
+              <h3>DIÁLOGOS DIGITALES</h3>
+              <h4>Prompt Engineering</h4>
+              <p>Dominar la comunicación efectiva con modelos de IA</p>
+              <ul class="module-topics">
+                <li>Context Engineering</li>
+                <li>Estructura de un prompt</li>
+                <li>Técnicas de prompts</li>
+                <li>Seguridad y protección</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">(4)</div>
+              <div class="module-duration">6 horas</div>
+            </div>
+            <div class="module-body">
+              <h3>GPT'S Y ASISTENTES</h3>
+              <h4>Arquitectura de IA</h4>
+              <p>Diseñar y crear asistentes inteligentes personalizados</p>
+              <ul class="module-topics">
+                <li>Arquitectura de IA</li>
+                <li>Diferencia entre agentes y asistentes</li>
+                <li>Asistentes: GPT, Gemini, Copilot</li>
+                <li>Creación de asistentes con IA</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">(5)</div>
+              <div class="module-duration">6 horas</div>
+            </div>
+            <div class="module-body">
+              <h3>PROTOTIPADO</h3>
+              <h4>Automatización con IA</h4>
+              <p>Construir flujos de trabajo automatizados con IA</p>
+              <ul class="module-topics">
+                <li>Qué es un workflow</li>
+                <li>Qué es un trigger</li>
+                <li>Configuración paso a paso</li>
+                <li>Personalización y revisión de flujos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">(6)</div>
+              <div class="module-duration">4 horas</div>
+            </div>
+            <div class="module-body">
+              <h3>APRENDER HACIENDO</h3>
+              <h4>Proyecto Final</h4>
+              <p>Aplicar todo lo aprendido en un proyecto real</p>
+              <ul class="module-topics">
+                <li>Desarrollo de proyectos en grupo</li>
+                <li>Acompañamiento de un mentor</li>
+                <li>Asesoría personalizada (40 min - 1 hora)</li>
+                <li>Modalidad: Reto presencial o Guiado virtual</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Investment Section -->
     <section class="investment parallax-section" id="inversion">
-        <div class="parallax-bg"
-            style="background: radial-gradient(circle at 50% 50%, rgba(107, 78, 255, 0.08) 0%, transparent 70%);"></div>
+      <div
+        class="parallax-bg"
+        style="
+          background: radial-gradient(
+            circle at 50% 50%,
+            rgba(107, 78, 255, 0.08) 0%,
+            transparent 70%
+          );
+        "
+      ></div>
 
-        <div class="container">
-            <h2>Inversión</h2>
+      <div class="container">
+        <h2>Inversión</h2>
 
-            <div class="pricing-container">
-                <div class="pricing-breakdown">
-                    <h3>Desglose por Módulo</h3>
+        <div class="pricing-container">
+          <div class="pricing-breakdown">
+            <h3>Desglose por Módulo</h3>
 
-                    <div class="price-item">
-                        <span class="price-label">CO-INTELIGENCIA (1h)</span>
-                        <span class="price-value">$1.375.000</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="price-label">CO-WORKER (1h)</span>
-                        <span class="price-value">$1.375.000</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="price-label">DIÁLOGOS DIGITALES (4h)</span>
-                        <span class="price-value">$5.500.000</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="price-label">GPT'S Y ASISTENTES (6h)</span>
-                        <span class="price-value">$8.250.000</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="price-label">PROTOTIPADO (6h)</span>
-                        <span class="price-value">$8.250.000</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="price-label">APRENDER HACIENDO (4h)</span>
-                        <span class="price-value">$5.500.000</span>
-                    </div>
-
-                    <div class="price-item price-total">
-                        <div>
-                            <div class="price-label">Total (22 horas)</div>
-                            <div class="price-sublabel">Valor hora x persona: $44.000</div>
-                        </div>
-                        <span class="price-value">$30.250.000</span>
-                    </div>
-
-                    <div class="discount-badge">🎉 Descuento 20% = $24.200.000</div>
-                </div>
-
-                <div class="pricing-features">
-                    <h3>El programa incluye:</h3>
-
-                    <ul class="feature-list">
-                        <li>Hasta 25 participantes por grupo</li>
-                        <li>Certificado e insignia digital</li>
-                        <li>Modalidad presencial en Medellín y/o virtual</li>
-                        <li>Programa personalizado según necesidades de la empresa</li>
-                        <li>Personalizable por áreas de negocio, nivel o tipo de roles</li>
-                        <li>Ajustable en número de horas y alcance</li>
-                    </ul>
-
-                    <div class="bonus-section">
-                        <h4>🎁 Bono Especial</h4>
-                        <p>Todos los participantes recibirán copia del libro digital "El error del prompt: guía para
-                            potenciar la mente y desatar la creatividad con IA"</p>
-                    </div>
-                </div>
+            <div class="price-item">
+              <span class="price-label">CO-INTELIGENCIA (1h)</span>
+              <span class="price-value">$1.375.000</span>
             </div>
+            <div class="price-item">
+              <span class="price-label">CO-WORKER (1h)</span>
+              <span class="price-value">$1.375.000</span>
+            </div>
+            <div class="price-item">
+              <span class="price-label">DIÁLOGOS DIGITALES (4h)</span>
+              <span class="price-value">$5.500.000</span>
+            </div>
+            <div class="price-item">
+              <span class="price-label">GPT'S Y ASISTENTES (6h)</span>
+              <span class="price-value">$8.250.000</span>
+            </div>
+            <div class="price-item">
+              <span class="price-label">PROTOTIPADO (6h)</span>
+              <span class="price-value">$8.250.000</span>
+            </div>
+            <div class="price-item">
+              <span class="price-label">APRENDER HACIENDO (4h)</span>
+              <span class="price-value">$5.500.000</span>
+            </div>
+
+            <div class="price-item price-total">
+              <div>
+                <div class="price-label">Total (22 horas)</div>
+                <div class="price-sublabel">Valor hora x persona: $44.000</div>
+              </div>
+              <span class="price-value">$30.250.000</span>
+            </div>
+
+            <div class="discount-badge">🎉 Descuento 20% = $24.200.000</div>
+          </div>
+
+          <div class="pricing-features">
+            <h3>El programa incluye:</h3>
+
+            <ul class="feature-list">
+              <li>Hasta 25 participantes por grupo</li>
+              <li>Certificado e insignia digital</li>
+              <li>Modalidad presencial en Medellín y/o virtual</li>
+              <li>Programa personalizado según necesidades de la empresa</li>
+              <li>
+                Personalizable por áreas de negocio, nivel o tipo de roles
+              </li>
+              <li>Ajustable en número de horas y alcance</li>
+            </ul>
+
+            <div class="bonus-section">
+              <h4>🎁 Bono Especial</h4>
+              <p>
+                Todos los participantes recibirán copia del libro digital "El
+                error del prompt: guía para potenciar la mente y desatar la
+                creatividad con IA"
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer CTA -->
     <section class="footer-cta">
-        <div class="footer-cta-content">
-            <h2>¿Listo para transformar tu organización?</h2>
-            <p>Únete al programa SINERGIA y eleva tu talento con IA Generativa</p>
-            <a href="#contacto" class="btn btn-primary btn-footer">Solicitar Información</a>
-        </div>
+      <div class="footer-cta-content">
+        <h2>¿Listo para transformar tu organización?</h2>
+        <p>Únete al programa SINERGIA y eleva tu talento con IA Generativa</p>
+        <a href="#contacto" class="btn btn-primary btn-footer"
+          >Solicitar Información</a
+        >
+      </div>
     </section>
 
     <footer class="footer-note">
-        <p><strong>Cámara de Comercio Aburrá Sur</strong></p>
-        <p class="footer-disclaimer">La Cámara de Comercio Aburrá Sur es una Institución no responsable del Impuesto
-            sobre las ventas IVA, según Ley 30 de 1992, artículo 92.</p>
+      <p><strong>Cámara de Comercio Aburrá Sur</strong></p>
+      <p class="footer-disclaimer">
+        La Cámara de Comercio Aburrá Sur es una Institución no responsable del
+        Impuesto sobre las ventas IVA, según Ley 30 de 1992, artículo 92.
+      </p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
