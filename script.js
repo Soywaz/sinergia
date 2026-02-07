@@ -4,7 +4,37 @@ document.addEventListener('DOMContentLoaded', () => {
     initIntersectionObserver();
     initParallax();
     initBackToTop();
+    initModuleCards();
 });
+
+// Premium Module Cards: 3D Tilt & Spotlight
+function initModuleCards() {
+    const cards = document.querySelectorAll('.module-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Spotlight variables
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+            
+            // 3D Tilt calculation
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (-(y - centerY) / centerY) * 10; // Max 10 degrees
+            const rotateY = ((x - centerX) / centerX) * 10;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        });
+    });
+}
 
 // Smooth Scroll for Navigation
 function initSmoothScroll() {
@@ -31,36 +61,23 @@ function initSmoothScroll() {
 // Intersection Observer for Reveal Animations
 function initIntersectionObserver() {
     const options = {
-        threshold: 0.15,
+        threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('reveal-active');
+                entry.target.classList.add('revealed');
                 observer.unobserve(entry.target);
             }
         });
     }, options);
 
-    const revealElements = document.querySelectorAll('.question-card, .module-card, .route-item, .section-title, .value-text');
+    const revealElements = document.querySelectorAll('.question-card, .module-card, .route-item, .section-title, .value-text, .pricing-container');
     revealElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.8s cubic-bezier(0.23, 1, 0.32, 1)';
         observer.observe(el);
     });
-
-    // Add class for active state to trigger transition
-    document.addEventListener('scroll', () => {
-        revealElements.forEach(el => {
-            if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            }
-        });
-    }, { passive: true });
 }
 
 // Subtle Hero Parallax
